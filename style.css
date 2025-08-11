@@ -1,0 +1,140 @@
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin: 0;
+    
+}
+
+
+.container {
+    max-width: 700px;
+    margin: 70px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.input-area {
+    display: grid;
+    grid-template-columns: 2fr 2fr auto;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.input-area input {
+    
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.input-area input:focus {
+    border-color: #4f46e5;
+}
+
+.input-area button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #7998da;
+}
+
+.tarefa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.tarefa > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Texto alinhado à esquerda */
+    gap: 5px;
+    padding: 0;
+}
+
+
+#listaTarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarefa-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarefa .etiqueta {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.tarefa .data {
+    font-size: 12px;
+    color: gray;
+    margin-top: 2px;
+}
+
+.tarefa-concluida {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.btn-concluir {
+    background-color: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.img-check {
+    width: 24px;
+    height: 24px;
+}
+
+.meta-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#contadorTarefas{
+    color: rgba(177, 186, 203, 1);
+    display: flex;
+    justify-content: right;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .input-area {
+        grid-template-columns: 1fr;
+    }
+    .tarefa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
