@@ -9,19 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
 </head>
-    <body>
-        <div class="container">
-            <h2>Board de tarefas</h2>
-            <div class="input-area">
-                <input type="text" id="tarefaInput" placeholder="Nova tarefa">
-                <input type="text" id="etiquetaInput" placeholder="Etiqueta">
-                <button onclick="adicionarTarefa()">+</button>
+<body>
+        <!-- Cabeçalho semântico -->
+    <header class="container">
+      <h1>Board de tarefas</h1>
+      <main>
+          <div class="container">
+              <div class="input-area">
+                  <input type="text" id="tarefaInput" placeholder="Nova tarefa">
+                  <input type="text" id="etiquetaInput" placeholder="Etiqueta">
+                  <button onclick="adicionarTarefa()">+</button>
+                </div>
+                <div id="listaTarefas"></div>
             </div>
-            <div id="listaTarefas"></div>
-            <div id="contadorTarefas"></div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+            <script src="script.js"></script>
+        </main>
+        <div id="contadorTarefas" aria-live="polite"></div>
+    </header>
+        <!-- Rodapé -->
+    <footer>
+        <p>Projeto Lista de Tarefas - © 2025</p>
+    </footer>
+</body>
 </html>

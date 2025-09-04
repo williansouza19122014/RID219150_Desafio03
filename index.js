@@ -174,7 +174,8 @@ function atualizarContador() {
     let tarefas = getTarefasDoLocalStorage();
     let concluidas = tarefas.filter(t => t.concluida).length;
     let total = tarefas.length;
-    document.getElementById("contadorTarefas").textContent = `${concluidas} / ${total} concluídas`;
+    let contador = document.getElementById("contadorTarefas");
+    contador.textContent = `${concluidas} / ${total} concluídas`;
 }
 
 
